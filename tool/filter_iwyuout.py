@@ -1,7 +1,7 @@
 #! /usr/bin/env python
 """IWYU output filter
 
-    Copyright (C) 2019-2026 kaoru  https://www.tetengo.org/
+Copyright (C) 2019-2026 kaoru  https://www.tetengo.org/
 """
 
 import re
@@ -10,7 +10,9 @@ import sys
 
 def main() -> None:
     """The main function."""
-    no_error_pattern: re.Pattern[str] = re.compile("has correct #includes/fwd-decls\)$")
+    no_error_pattern: re.Pattern[str] = re.compile(
+        r"has correct #includes/fwd-decls\)$"
+    )
     exit_code: int = 0
     for line in sys.stdin:
         line = line.rstrip("\n")
