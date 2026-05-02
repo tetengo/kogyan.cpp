@@ -1,6 +1,7 @@
 [
   { include: ["<bits/exception.h>",     "private", "<exception>",   "public"] },
   { include: ["<bits/std_function.h>",  "private", "<functional>",  "public"] },
+  { include: ["<bits/unicode-data.h>",  "private", "<format>",      "public"] },
   { include: ["@<bits/fs_.+>",          "private", "<filesystem>",  "public"] },
   { include: ["<bits/shared_ptr.h>",    "private", "<memory>",      "public"] },
   { include: ["@<bits/stdint-.+>",      "private", "<cstdint>",     "public"] },
@@ -12,6 +13,7 @@
   { include: ["<boost/container/detail/std_fwd.hpp>",              "private", "<utility>",                             "public"] },
   { include: ["<boost/container_hash/extensions.hpp>",             "private", "<boost/container_hash/hash.hpp>",       "public"] },
   { include: ["<boost/detail/basic_pointerbuf.hpp>",               "private", "<boost/lexical_cast.hpp>",              "public"] },
+  { include: ["<boost/endian/detail/order.hpp>",                   "private", "<boost/endian/buffers.hpp>",            "public"] },
   { include: ["@<boost/format/.+>",                                "private", "<boost/format.hpp>",                    "public"] },
   { include: ["<boost/interprocess/detail/os_file_functions.hpp>", "private", "<boost/interprocess/file_mapping.hpp>", "public"] },
   { include: ["@<boost/lexical_cast/.+>",                          "private", "<boost/lexical_cast.hpp>",              "public"] },
