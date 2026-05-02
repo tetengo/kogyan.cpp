@@ -1,6 +1,7 @@
 [
   { include: ["<bits/exception.h>",     "private", "<exception>",   "public"] },
   { include: ["<bits/std_function.h>",  "private", "<functional>",  "public"] },
+  { include: ["<bits/unicode-data.h>",  "private", "<format>",      "public"] },
   { include: ["@<bits/fs_.+>",          "private", "<filesystem>",  "public"] },
   { include: ["<bits/shared_ptr.h>",    "private", "<memory>",      "public"] },
   { include: ["@<bits/stdint-.+>",      "private", "<cstdint>",     "public"] },
